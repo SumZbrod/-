@@ -1,0 +1,18 @@
+# Godot cache
+.godot/
+.mono/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Blender backups
+*.blend1
+*.blend2
+*~
+
+# Optional: local exports
+export/
+
+
+project.godot

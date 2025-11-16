@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://27iwwoliisah"]
+
+[ext_resource type="Texture2D" uid="uid://c40wxiftb8nts" path="res://art/img/bg.png" id="1_o5qli"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0wfyh"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_o5qli")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_0wfyh")
+animation = &"new_animation"
